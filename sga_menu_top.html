@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SGA UTM — Menú Superior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="sga_menu_top.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" />
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="brand">
+        <span class="brand-sigla">UTM</span>
+        <span class="brand-sga">Sistema de Gestión Académica</span>
+    </div>
+
+    <div class="user-box">
+        <div class="user-info">
+            <span class="user-name">NOMBRE1 NOMBRE2 APELLIDO1 APELLIDO2 </span>
+            <span class="user-role">Estudiante — Ingeniería TI</span>
+        </div>
+
+        <button class="logout-btn" title="Cerrar sesión">
+            <i class="fa-solid fa-power-off"></i>
+        </button>
+    </div>
+
+</header>
+
+
+<!-- MENÚ SUPERIOR -->
+
+<nav class="menu-bar">
+
+<ul class="menu">
+
+    <li class="menu-item">
+        <button class="menu-btn" data-panel="inicio">
+            <i class="fa-solid fa-house"></i> Inicio
+        </button>
+    </li>
+
+    <li class="menu-item has-submenu">
+        <button class="menu-btn">
+            <i class="fa-solid fa-book"></i> Información Académica
+        </button>
+
+        <ul class="submenu">
+            <li><a href="#" data-panel="datos">Datos personales</a></li>
+            <li><a href="#" data-panel="historial">Historial académico</a></li>
+            <li><a href="#" data-panel="certificados">Certificados</a></li>
+            <li><a href="#" data-panel="horario">Horarios</a></li>
+        </ul>
+    </li>
+
+    <li class="menu-item has-submenu">
+        <button class="menu-btn">
+            <i class="fa-solid fa-user-graduate"></i> Trámites y Matrícula
+        </button>
+
+        <ul class="submenu">
+            <li><a href="#" data-panel="matricula">Matrícula / inscripción</a></li>
+            <li><a href="#" data-panel="solicitudes">Solicitudes en línea</a></li>
+            <li><a href="#" data-panel="pagos">Pagos y estado de cuenta</a></li>
+        </ul>
+    </li>
+
+    <li class="menu-item has-submenu">
+        <button class="menu-btn">
+            <i class="fa-solid fa-building-columns"></i> Información Institucional
+        </button>
+
+        <ul class="submenu">
+            <li><a href="#" data-panel="notificaciones">Notificaciones</a></li>
+            <li><a href="#" data-panel="comunicados">Comunicados</a></li>
+            <li><a href="#" data-panel="manual">Manual de usuario</a></li>
+        </ul>
+    </li>
+
+    <li class="menu-item has-submenu">
+        <button class="menu-btn">
+            <i class="fa-solid fa-gear"></i> Configuración
+        </button>
+
+        <ul class="submenu">
+            <li><a href="#" data-panel="perfil">Perfil de usuario</a></li>
+            <li><a href="#" data-panel="seguridad">Seguridad y acceso</a></li>
+        </ul>
+    </li>
+
+</ul>
+
+</nav>
+
+
+<!-- CONTENIDO -->
+
+<main class="content">
+
+<article class="panel" id="panel-welcome">
+    <h2>Prototipo B</h2>
+
+    <p>
+        Esta versión utiliza un <strong>menú superior con submenús desplegables</strong>
+        manteniendo la misma paleta cromática institucional(verde olivo + amarillo oro UTM).
+    </p>
+
+    <ul>
+        <li>El menú está organizado por <strong>macro-categorías</strong></li>
+        <li>Las opciones secundarias se despliegan en <strong>submenús</strong></li>
+        <li>Permite comparar usabilidad frente a menú lateral</li>
+    </ul>
+
+</article>
+
+
+<article class="panel" id="panel-dynamic" hidden>
+    <h2 id="panel-title"></h2>
+    <p id="panel-description"></p>
+</article>
+
+</main>
+
+<script src="sga_menu_top.js"></script>
+
+</body>
+</html>
